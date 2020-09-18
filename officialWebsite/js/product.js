@@ -2,13 +2,12 @@ $(document).ready(function () {
     console.log("ready")
 
     $.ajax({
-        url: "http://makeup-api.herokuapp.com/api/v1/products.json?product_tags=Natural&product_type=lipstick",
+        url: "https://makeup-api.herokuapp.com/api/v1/products.json?product_tags=Natural&product_type=lipstick",
         success: function (response) {
             console.log("=================")
             console.log(response)
             console.log("==================")
             for(item in response){
-                // console.log(response[item])
 
                 let name = response[item].name;
                 let img = response[item].image_link;
@@ -27,16 +26,6 @@ $(document).ready(function () {
         
     });
 
-    // for(let i=1;i<=5;i++){
-    //     var product = new Product();
-        
-    //     product.setProductImg = "https://picsum.photos/300/200/?random="+i;
-    //     product.setProductName = i
-    //     product.setBtnLink = "#"+i;
-
-    //     $(".product .content").append(product.creat);
-    // }
-    
     
 });
 
