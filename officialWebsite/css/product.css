@@ -1,0 +1,132 @@
+.product{
+    width: 100%;
+
+    background-color: white;
+    display: flex;
+}
+
+.product .wrap{
+    width: 1200px;
+
+    margin: 0 auto;
+    /* background-color: blueviolet; */
+}
+
+.product .wrap .title{
+    width: 100%;
+    display: flex;
+    padding: 100px 0 30px;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.product .wrap .content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.product .wrap .content .box{
+    box-sizing: margin-box;
+    height: 360px;
+    width: 260px;
+    background-color: #eeecec;
+    margin: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #aaaaaa;
+}
+
+.product .wrap .content .box .img-box {
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.product .wrap .content .box .img-box> img{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    background-color: white;
+    min-height: 200px;
+}
+
+.product .wrap .content .box .box-content{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.product .wrap .content .box .box-content h2{
+    width: 100%;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+}
+
+.product .wrap .content .box .box-content a{
+    position: absolute;
+    bottom: 30px;
+    font-weight: 300;
+    width: 150px;
+    height: 40px;
+    font-weight: 300;
+    border: solid 1px #F9BA48;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9BA48;
+}
+
+.product .wrap .content .box .box-content a:hover{
+ 
+    background-color:  #F9BA48;
+    color: black;
+}
+
+@media screen and (max-width: 1200px){
+    .product .wrap .content .box{
+        width: calc(33% - 40px);
+        max-width:calc(33% - 40px);
+        min-width: calc(33% - 40px);
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .product .wrap .title{
+        padding-top: 50px;
+    }
+
+    .product .wrap .content .box{
+        width: calc(50% - 40px);
+        max-width:calc(50% - 40px);
+        min-width: calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .product .wrap .content{
+        flex-wrap: nowrap; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product .wrap .content .box{
+        width: 260px;
+        max-width:260px;
+        min-width: 260px;
+    }
+}

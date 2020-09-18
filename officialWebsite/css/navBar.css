@@ -1,0 +1,122 @@
+.nav{
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: aliceblue;
+}
+
+#navcheck{
+    position: absolute;
+    z-index: -100;
+    opacity: 0;
+}
+
+.nav .wrap{
+    position: relative;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav .wrap .nav-btn{
+    display: none;
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+}
+
+
+
+.nav .wrap .nav-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    margin: auto;
+    background-color: white;
+
+    box-shadow: 0 10px 0 white,
+                0 -10px 0 white;
+}
+
+.nav .wrap .content{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.nav .wrap .content > a{
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.nav .wrap .content > a:hover{
+    color: red;
+}
+
+@media screen and (max-width: 768px){
+
+    .nav{
+        height: 60px;
+    }
+
+    .nav .wrap{
+        display: block;
+        max-width: 768px;
+    }
+
+    
+    .nav .wrap .logo{
+        position: absolute;
+        left: calc(50% - 100px);
+        top: calc(50% - 25px);
+    }
+
+    .nav .wrap .nav-btn{
+        display: block;
+        right: 0;
+    }
+
+    .nav .wrap .content{
+        position: absolute;
+        
+        justify-content: start;
+        left: -200px;
+        width: 200px;
+        height: auto;
+        background-color: black;
+        top: calc(100%);
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    /* 用ID判斷 */
+    #navcheck:checked ~ .content{
+        left: 0;
+    }
+
+    .nav .wrap .content a{
+        width: 100%;
+        padding: 20px 0;
+        color: white;
+        border-bottom: solid 1px white;
+    }
+}
