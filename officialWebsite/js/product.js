@@ -11,13 +11,13 @@ $(document).ready(function () {
 
                 let name = response[item].name;
                 let img = response[item].image_link;
-                let link = response[item].product_link;
+                // let link = response[item].product_link;
 
 
                 var product = new Product();
                 product.setProductImg = img;
                 product.setProductName = name;
-                product.setBtnLink = link;
+                product.setBtnLink = "#";
 
                 $(".product .content").append(product.creat);
             }

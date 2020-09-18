@@ -1,0 +1,30 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(230, 230, 87);
+}
+
+.demoList{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.demoList a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: antiquewhite;
+    height: 60px;
+    width: 25%;
+    color: black;
+}
+
+.demoList a:hover{
+    background-color: rgb(255, 202, 132);
+}
