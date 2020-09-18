@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato Clock</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/clock.css">
+    <link rel="stylesheet" href="./css/alertView.css">
+    <link rel="stylesheet" href="./css/todoList.css">
+<!-- 進度條套件 -->
+    <script src="https://cdn.bootcss.com/progressbar.js/1.0.1/progressbar.js"></script> 
+    <script src="./js/alertView.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/navBar.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/timmer.js"></script>
+    <script src="./js/todoItem.js"></script>
+    
+</head>
+<body>
+    <div class="content">
+
+        <div class="navbar">
+
+            <div class="wrap ">
+                <div class="btn nav-seleted" id="main" onclick="navItemClick('main')">
+                    <img src="img/main.png" alt="123">
+                </div>
+                <div class="btn" id="music" onclick="navItemClick('music')">
+                    <img src="img/music.png" alt="123">
+                </div>
+                <div class="btn" id="analysis" onclick="navItemClick('analysis')">
+                    <img src="img/analysis.png" alt="123">
+                </div>
+            </div>
+        </div>
+
+        <div class="mainContent" id="mainContent">
+
+            <div class="main">
+
+                <div class="wrap" id="main-wrap">
+                    <div class = "todolink" id="todolink">
+                        <img src="img/Polygon 4.png" alt="link">
+                    </div>
+    
+    
+                    <!-- Main(更換) -->
+    
+                    <div class="listbox" id="listbox">
+                        <div class="todo">
+                            <div class="todoTitle">
+                                <p class="todolistTitle">代辦任務</p>
+                                <div class="right">
+                                    <div class="up-down">
+                                        <img src="./img/up-down.png" alt="up-down">
+                                    </div>
+                                    <div class="addBtn" onclick="addBtn()">
+                                        <img src="./img/add.png" alt="addBtn">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="todoItem" id="todoItem">
+
+
+                                <!-- <div class="itembox">
+                                    <div class="left">
+                                        <div class="check"></div>
+                                        <p>行銷提案簡報完成</p>
+                                    </div>
+                                    <div class="right">
+                                        <img onclick="itemCancle(this)" src="img/Group 65.png" alt="cancel">
+                                        <img onclick="itemPlay(this)" src="img/Group 66.png" alt="stop">
+                                    </div>
+                                </div> -->
+
+
+                            </div>                  
+                        </div>
+                        <div class="completeTodo">
+                            <div class="completeTodoTitle">
+                                <p class="todolistTitle">已完成任務</p>
+                            </div>
+                            <div class="completeTodoItem" id = "completeTodoItem">
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- music -->
+    
+                    <!-- <div class="listbox">
+                        <div class="listBoxTitle">
+                        </div>
+                        <div class="music">
+                            <div class="clock-alert">
+                                <p>鬧鐘提醒</p>
+                                <div class="open">
+                                    <div class="btn">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work">
+    
+                            </div>
+                            <div class="rest">
+    
+                            </div>
+                        </div>
+                    </div> -->
+    
+                    <!-- analysis -->
+                    
+                    <!-- <div class="listbox">
+                        <div class="listBoxTitle">
+                        </div>
+                        <div class="analysis">
+                            <div class="nav">
+                                <div class="report">
+                                    <p>番茄報表</p>
+                                </div>
+                                <div class="task">
+                                    <p>任務報表</p>
+                                </div>
+                            </div>
+                            <div class="wrap">
+    
+                            </div>
+                        </div>
+                    </div> -->
+    
+                    <!-- ===== end ===== -->
+                </div>
+            </div>
+    
+            <div class="clock">
+                <div class="wrap">
+                    <div class="time-wrap" id="time-wrap">
+                        <div class="clockZero"></div>
+                        <div class="time-zone"></div>
+                        <div class="time" id="time">
+                            <p class="timeLab" id="timeLab">
+                                00：30
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="play-wrap">
+                        <div class="box">
+                            <div class="item">
+                                <img class="cancel" src="img/Group 67.png" alt="cancel" onclick="cancelBtn()">
+                            </div>
+                            <div class="item" id="playBtn" onclick="playBtn()">
+                                <img class="play" id="playImg" src="img/play.png" alt="play">
+                            </div>
+                            <div class="item">
+                                <img class="next" src="img/Group 69.png" alt="next" onclick="nextBtn()">
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                
+            </div>
+
+            <!-- <div class="alertViewContainer" id="alertViewContainer">
+                <div class="alertView">
+                    <div class="alertTitle">
+                        <p>新增任務</p>
+                    </div>
+                    <div class="alertContent">
+                        <p>您確定要終止目前任務？ 此次番茄鐘將不列入計算。</p>
+                        <div class="addNameContent">
+                            <p>任務名稱</p>
+                            <input type="text" placeholder="輸入任務">
+                        </div>
+
+                        <div class="tomatoContent">
+                            <p>番茄數</p>
+                            <div class="tomatoArray">
+                                <div class="tomatoFill"></div>
+                                <div class="tomatoFill"></div>
+                                <div class="tomato "></div>
+                                <div class="tomato"></div>
+                                <div class="tomato"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="alertFooter">
+                        <div class="alertBtn" id="alertBtnCancle" onclick="alertBtnCancle()">
+                            <p>取消</p>
+                        </div>
+                        <div class="alertBtn confirmBtn" id="alertBtnConfirm" onclick="alertBtnConfirm("add")">
+                            <p>確認</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+        </div>
+            
+        
+
+        
+    </div>
+</body>
+</html>

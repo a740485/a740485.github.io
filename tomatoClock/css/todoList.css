@@ -1,0 +1,139 @@
+/* ===== todolist ===== */
+.todo .todoTitle{
+    height: 52px;
+    width: 100%;
+    background: #92F2E9;
+    border-radius: 19px 19px 0px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todolistTitle{
+    /* todolist titiel字體 */
+    box-sizing: border-box;
+    height: 100%;
+    padding: 8px 0;
+    padding-left: 27px;
+    text-align: left;
+    font-size: 24px;
+    color: #333232;
+    letter-spacing: 2.4px;
+    line-height: 36px;
+}
+
+.todoTitle .right{
+    display: flex;
+    padding-right: 20px;
+}
+
+.todoTitle .right .up-down{
+    width: 16px;
+    height: 30px;
+    /* background-color: red; */
+}
+
+.todoTitle .right .addBtn{
+    height: 30px;
+    width: 30px;
+    margin-left: 14px;
+    /* background-color: gold; */
+}
+
+.todo .todoItem{
+    box-sizing: border-box;
+    height: 314px;
+    width: 100%;
+    padding: 0 27px;
+    overflow: auto;
+}
+
+.todoItem .itembox {
+    box-sizing: margin-box;
+    display: flex;
+    height: 51.5px;
+    justify-content: space-between;
+    border-bottom: 2px solid #D6D6D6;
+}
+
+.todoItem .itembox .left{
+    display: flex;
+    align-items: center;
+}
+
+.todoItem .itembox .left .check{
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #80CBC4; 
+
+    margin-right: 6px;
+}
+
+.todoItem .itembox .right{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    justify-content: space-between;
+}
+
+.completeTodo .completeTodoTitle{
+    height: 52px;
+    width: 100%;
+    background: #E0E0E0;
+}
+
+.completeTodo .completeTodoItem{
+    box-sizing: border-box;
+    height: 214px;
+    width: 100%;
+    padding: 0 27px;
+    overflow: auto;
+}
+
+.completeTodo .itembox {
+    box-sizing: margin-box;
+    display: flex;
+    height: 51.5px;
+    justify-content: space-between;
+    border-bottom: 2px solid #D6D6D6;
+}
+
+.completeTodo .itembox .left{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.completeTodo .itembox .left .check{
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #D6D6D6; 
+    margin-right: 6px;
+    
+
+}
+
+.completeTodo .itembox .left .check::before{
+    content:'';
+    display:block;
+    top: 20px;
+    left: 8px;
+	width:3px;
+	height:8px;
+	border-right: #D6D6D6 solid 2px;
+	border-bottom:#D6D6D6 solid 2px;
+	transform:rotate(35deg);
+	position:absolute;
+
+	z-index:2;
+
+}
+
+.completeTodo .itembox .left > P{
+    color: #D6D6D6;
+}
