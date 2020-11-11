@@ -1,0 +1,85 @@
+{
+    "success": true,
+    "data":[
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_1"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_2"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_3"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_4"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_5"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_6"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_7"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_8"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_9"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_10"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_11"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_12"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_13"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_14"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_15"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_16"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_17"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_18"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_19"
+        },
+        {
+            "img": "http://fakeimg.pl/28x28",
+            "name":"friend_20"
+        }
+    ]
+}

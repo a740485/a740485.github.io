@@ -1,0 +1,36 @@
+{
+    "success":true,
+    "mainData": [
+        {
+            "id":1,
+            "ownerImg":"http://fakeimg.pl/28x28",
+            "ownerName":"東森新聞",
+            "time":"4小時",
+            "title":"<p>#放假去哪編：又多4人確診了！</p><p>最新消息都在這👉https://goo.gl/Ui51Xe</p><p>#武漢肺炎</p>",
+            "img": "http://fakeimg.pl/500x260",
+            "likeAmount":171,
+            "msgAmount":2,
+            "shareAmount":1
+        },{
+            "id":2,
+            "ownerImg":"http://fakeimg.pl/28x28",
+            "ownerName":"BusinessFocus",
+            "time":"2小時",
+            "title":"<p>【#BF環球視野】拜登：好有信心會贏     特朗普：今晚要發表勝選宣言！</p><p>美國大選結果仍在點算中，雖然拜登暫時在普選票及選舉人票領先，但特朗普在賓夕法尼亞州等多個關鍵搖擺州份都領先拜登。</p><p>拜登在特拉華州威明頓市發表演說，表示仍然對勝選好有信心。已點票64%的賓夕法尼亞州，特朗普暫時得票56.9%，高出拜登相達 15 個百分點，但拜登認為郵寄選票將助他逆轉形勢。他呼籲人民耐心等待郵寄選票點票，並指可能要等到美國時間11月4 日（香港時間 5 日）之後才有結果。</p>",
+            "img": "https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.0-0/p526x296/123300324_1858010381021546_2478646627189365102_o.jpg?_nc_cat=100&ccb=2&_nc_sid=8bfeb9&_nc_ohc=2j5NFBkBFz4AX_19gDh&_nc_ht=scontent.ftpe8-2.fna&tp=6&oh=1aa6bd31af3adfa62b6d1f8b6fb35ff9&oe=5FC83F5E",
+            "likeAmount":155,
+            "msgAmount":16,
+            "shareAmount":4
+        },{
+            "id":3,
+            "ownerImg":"http://fakeimg.pl/28x28",
+            "ownerName":"ETtoday新聞雲",
+            "time":"37分鐘",
+            "title":"<p>＃插播　川普訴請停止所有計票！！！ (#01J)</p><p>↗ETtoday新聞雲App，美選開票即時更新</p><p>http://goo.gl/sJmzjp</p>",
+            "img": "https://external.ftpe8-2.fna.fbcdn.net/safe_image.php?d=AQARh06K6tPLDceZ&w=500&h=261&url=https%3A%2F%2Fcdn2.ettoday.net%2Fimages%2F5248%2Fd5248561.jpg&cfs=1&ext=jpg&_nc_cb=1&_nc_hash=AQBTj6xMRO9yLHzl",
+            "likeAmount":4279,
+            "msgAmount":711,
+            "shareAmount":101
+        }
+    ]
+}
