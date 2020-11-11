@@ -1,0 +1,5 @@
+{
+    "success": true,
+    "loginState": true,
+    "userInfo":{"id":1,"name":"阿寶","img":"http://fakeimg.pl/28x28"}
+}

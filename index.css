@@ -12,19 +12,52 @@
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
+    box-sizing: margin-box;
 }
 
 .demoList a{
+    box-sizing: border-box;
+    margin: 10px 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     background-color: antiquewhite;
     height: 60px;
-    width: 25%;
+    width: calc(25% - 20px);
+    min-width: 150px;
     color: black;
 }
 
 .demoList a:hover{
     background-color: rgb(255, 202, 132);
+}
+
+@media screen and (max-width: 960px){
+    .demoList a{
+        width: calc(33% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .demoList a{
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 450px){
+    .demoList a{
+        width: calc(100% - 20px);
+    }
+}
+
+@media screen and (max-width: 375px){
+    .demoList{
+        width: 100%;
+    }
+
+    .demoList a{
+        margin: 10px 0 0;
+        width: 100%;
+    }
 }
